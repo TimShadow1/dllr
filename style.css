@@ -1,24 +1,31 @@
-body {
+/* Reset and base styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: white !important; /* Принудительно белый цвет для всех элементов */
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     transition: background-color 0.1s;
-    color: white; /* Добавлено для белого текста */
+    background-color: rgb(0, 0, 0);
 }
 
 .container {
     text-align: center;
 }
 
-h1 {
+#title {
     font-size: 72px;
     margin-bottom: 40px;
     transition: font-family 0.1s;
-    color: white; /* Белый цвет для заголовка */
+    color: white !important; /* Явное указание с !important */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Добавим свечение для надежности */
 }
 
 .social-box {
@@ -33,7 +40,7 @@ h1 {
     margin: 15px;
     padding: 12px 25px;
     background-color: rgba(30, 30, 30, 0.7);
-    color: white; /* Белый текст для кнопок */
+    color: white !important;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
